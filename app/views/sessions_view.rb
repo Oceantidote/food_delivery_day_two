@@ -8,4 +8,11 @@ class SessionsView
   def print_wrong_credentials
     puts "Wrong credentials... Try again"
   end
+
+  def display(employees)
+    employees.each do |emp|
+      puts "#{emp.id} #{emp.username}"
+    end
+  end
+
 end
